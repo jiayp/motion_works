@@ -1,0 +1,11 @@
+# -*- coding: utf-8 -*-
+$:.unshift("/Library/RubyMotion/lib")
+require 'motion/project/template/android'
+
+Motion::Project::App.setup do |app|
+  # Use `rake config' to see complete project settings.
+  app.name = 'RBeacon'
+  app.permissions = [:bluetooth, :bluetooth_admin]
+  app.package = "com.jiayp.rbeacon"
+
+end
